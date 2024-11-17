@@ -1,8 +1,6 @@
 #main-5
 import streamlit as st
 from processor import load_and_prepare_data, calculate_kpis
-import seaborn as sns
-import matplotlib.pyplot as plt
 import pandas as pd
 
 
