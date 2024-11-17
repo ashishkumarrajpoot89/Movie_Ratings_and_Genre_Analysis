@@ -12,7 +12,7 @@ def load_and_prepare_data():
     movies.rename(columns={"id": "movieId"}, inplace=True)
     movies = movies.merge(df_ratings, on='movieId')
     movies = movies[['movieId', 'title', 'overview', 'genres', 'keywords', 
-                     'cast', 'crew', 'rating', 'release_date']]
+                     'rating', 'release_date']]
     movies['rating']=movies['rating'].round(1)
 
     # Sample data for performance
